@@ -8,6 +8,7 @@ $this->title = 'My Yii Application';
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
+<div class="container">
 <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'name') ?>
@@ -15,6 +16,6 @@ use yii\widgets\ActiveForm;
     <div class="form-group">
         <?= Html::submitButton('Submit', ['class' => 'green-sq btn-start']) ?>
     </div>
-
+</div>
 <?php ActiveForm::end(); ?>
 </div>
